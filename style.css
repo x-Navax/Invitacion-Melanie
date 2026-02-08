@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Shadows+Into+Light&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background-image: url(./imagenes/Invitación\ vertical\ quince\ años\ floral\ rosado\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+/* Header */
+
+.nombres{
+    width: 100%;
+    height: auto;
+    margin-bottom: -5px;
+}
+
+/* inicio contador */
+.contador {
+  background-color: #ffffff;
+  padding: 40px 0 20px 0;
+  color: #000000;
+  }
+.contador p {font-family: "Handlee", cursive;
+    color: #ff25a8;
+    font-size: 1.4rem;
+    margin-bottom: 20px;}
+  .centrado {text-align: center;}
+.time_circles {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue', cursive;
+ color: #ff9bd7;
+  margin-top: -30px;
+
+  }
+  
+.time_circles div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  margin: 0.8rem;
+  }
+  
+.time_circles span.number {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  }
+  
+.time_circles span.text {
+  font-size: 1.1rem; 
+  text-transform: uppercase;
+  }
+.mensaje {text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: red;}
+
+
+/* fin contador */
+
+/* CEREMONIA */
+.ceremonia {
+  font-family: "Handlee", cursive;
+  
+}
+.capilla {
+  width: 5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* FIESTA */
+.fiesta {
+  font-family: "Handlee", cursive;
+  margin-top: 30px;
+  margin-bottom: 30PX;
+  color: #ff25a8;
+  
+}
+.copa {
+  width: 5rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* REGALOS */
+.regalos {
+  
+   padding: 40px 0 20px 0;
+  font-family: "Handlee", cursive;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  color: #ff58e9;
+}
+
+.regalo{
+   width: 5rem;
+  margin-bottom: 20px;
+}
+
+.centrado{ margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.vestimenta {
+     background-color: #ffffff;
+     color: #ff25a8;
+   padding: 40px 0 20px 0;
+  font-family: "Handlee", cursive;
+}
+.pareja{
+     width: 5rem;
+  margin-bottom: 20px;
+}
+
+/* BOTONES */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: #ff58e9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: "Handlee", cursive;
+}
+
+.btn.white {
+  background: #fff;
+  color: #ff58e9;
+}
+
+.whatsapp-section {
+  max-width: 500px;
+  margin: 60px auto;
+  text-align: center;
+  font-family: "Handlee", cursive;
+}
+
+.whatsapp-section h2 {
+  margin-bottom: 25px;
+  font-size: 22px;
+ color: #ff25a8;
+}
+
+/* GRID */
+.whatsapp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* BOTONES */
+.btn-wsp {
+  padding: 15px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-wsp:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* COLORES */
+.btn-wsp.novio {
+  background-color: #25D366;
+  margin: 20px;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .whatsapp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer{
+     background-color: #ff9bd7;
+    color: black;
+    width: 100%;
+    height: auto;
+}
+
+footer a span {
+  color: #000;
+  text-decoration: none; /* también sirve acá */
+}
+
+footer span:hover {
+  color: purple; /* opcional: cambia al pasar el mouse */
+}
+footer a:hover {
+  color: purple; /* opcional: cambia al pasar el mouse */
+}
+
+
+.logoInsta {
+    width: 1.3rem;
+}
+
+.scroll-boda {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-boda.hide {
+  opacity: 0;
+  transform: translateX(-50%) translateY(15px);
+  pointer-events: none;
+}
+
+.scroll-boda span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.9);
+  border-right: 2px solid rgba(0, 0, 0, 0.9);
+  transform: rotate(45deg);
+  margin: -4px;
+  animation: flechaBoda 1.6s infinite;
+}
+
+.scroll-boda span:nth-child(2) {
+  animation-delay: 0.25s;
+  opacity: 0.6;
+}
+
+@keyframes flechaBoda {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+  50% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+}
