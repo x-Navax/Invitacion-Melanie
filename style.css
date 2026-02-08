@@ -10,9 +10,9 @@
 body{
   text-align: center;
   background-image: url(./imagenes/extendida.png);
-  background-size: cover;
-  background-position: center;
 
+  background-position: center;
+  background-size: cover;
 }
 
 html, body {
