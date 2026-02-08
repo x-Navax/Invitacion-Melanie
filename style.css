@@ -10,7 +10,6 @@
 body{
   text-align: center;
   background-image: url(./imagenes/extendida.png);
-
   background-position: center;
   background-size: cover;
 }
@@ -212,7 +211,6 @@ main {
 }
 
 footer{
-     background-color: #ff9bd7;
     color: black;
     width: 100%;
     height: auto;
